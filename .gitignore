@@ -2,3 +2,5 @@
 .idea/*
 myconfig*.py
 settings_local.py
+migrations/*.py
+*/migrations/*.py
