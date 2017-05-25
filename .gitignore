@@ -4,3 +4,5 @@ myconfig*.py
 settings_local.py
 migrations/*.py
 */migrations/*.py
+*/*/migrations/*.py
+tutorial/snippets/migrations/
