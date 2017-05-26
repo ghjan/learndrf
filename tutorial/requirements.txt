@@ -1,0 +1,9 @@
+Django==1.9.12
+djangorestframework
+markdown
+django-filter
+pygments
+httpie
+coreapi
+coreapi-cli
+django-rest-swagger
