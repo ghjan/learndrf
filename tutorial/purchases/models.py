@@ -21,5 +21,5 @@ class Purchase(models.Model):
         verbose_name_plural = u'购买详情'
         ordering = ('created',)
 
-    # def get_absolute_url(self):
-    #     return reverse('purchase-detail', args=[str(self.id)])
+        # def get_absolute_url(self):
+        #     return reverse('purchase-detail', args=[str(self.id)])

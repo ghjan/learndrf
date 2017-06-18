@@ -12,6 +12,7 @@ from purchases.models import Purchase
 
 class PurchaseSerializer(serializers.ModelSerializer):
     buyer = serializers.ReadOnlyField(source='buyer.username')
+
     # url = serializers.CharField(source='get_absolute_url', read_only=True)
     class Meta:
         model = Purchase

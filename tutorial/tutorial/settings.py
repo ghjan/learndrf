@@ -118,11 +118,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 try:
-    from config_drf import *
+    from .config_drf import *
 except:
     pass
 
 try:
-    from settings_local import *
+    from .settings_local import *
 except:
     pass
