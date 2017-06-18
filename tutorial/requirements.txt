@@ -7,4 +7,4 @@ httpie
 coreapi
 coreapi-cli
 django-rest-swagger
-mysql-python>=1.2.5
+#mysql-python>=1.2.5

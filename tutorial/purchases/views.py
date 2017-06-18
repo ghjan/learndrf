@@ -8,6 +8,8 @@ from purchases.permissions import IsOwnerOrReadOnly
 from purchases.models import Purchase
 from purchases.serializers import PurchaseSerializer
 
+from django.contrib.auth.models import AnonymousUser
+
 
 class PurchasesViewSet(viewsets.ModelViewSet):
     """
@@ -30,4 +32,4 @@ class PurchasesViewSet(viewsets.ModelViewSet):
         for the currently authenticated user.
         """
         user = self.request.user
-        return Purchase.objects.filter(buyer=user)
+        return [] if user.is_anonymous else Purchase.objects.filter(buyer=user)

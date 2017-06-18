@@ -6,3 +6,4 @@ migrations/*.py
 */migrations/*.py
 */*/migrations/*.py
 tutorial/snippets/migrations/
+static/

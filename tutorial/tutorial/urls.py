@@ -7,7 +7,14 @@ from rest_framework.schemas import get_schema_view
 
 schema_view = get_schema_view(title='Pastebin API')
 
-urlpatterns = [
+urlpatterns = []
+
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+urlpatterns += [
     # url(r'^', include('snippets.urls')),
     # url(r'^purchases/', include('purchases.urls')),
     url(r'^admin/', admin.site.urls),
@@ -34,4 +41,3 @@ router.register(r'purchases', purchases.views.PurchasesViewSet)
 urlpatterns += [
     url(r'^', include(router.urls)),
 ]
-
